@@ -1,5 +1,7 @@
 # TalentScout — AI Hiring Assistant
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://talentscout-xnqcdn7oj9de44gfappgspx.streamlit.app)
+
 > An intelligent chatbot that conducts structured candidate screening interviews,
 > collects profile information, and generates personalised technical questions based
 > on the candidate's declared tech stack — powered by large language models.
