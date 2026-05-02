@@ -1,24 +1,7 @@
-# ── Core framework ────────────────────────────────────────────────────────────
-fastapi==0.115.6
-uvicorn[standard]==0.32.1
-pydantic==2.10.3
-pydantic[email]==2.10.3
-pydantic-settings==2.7.0
+# Frontend-only dependencies (used by Streamlit Cloud)
+# The backend (FastAPI, DB, LLM) is deployed separately on Render.
+# Streamlit Cloud reads this file — it must NOT contain psycopg2, sqlalchemy, etc.
 
-# ── Database ──────────────────────────────────────────────────────────────────
-sqlalchemy==2.0.36
-psycopg2-binary==2.9.10        # PostgreSQL driver
-
-# ── LLM ───────────────────────────────────────────────────────────────────────
-openai==1.58.1                  # OpenAI-compatible client (works with Groq, Azure, Ollama)
-
-# ── Environment ───────────────────────────────────────────────────────────────
-python-dotenv==1.0.1
-
-# ── Frontend ──────────────────────────────────────────────────────────────────
 streamlit==1.41.1
 requests==2.32.3
-
-# ── Dev / optional ────────────────────────────────────────────────────────────
-# Uncomment if you want hot-reload during development:
-# watchfiles==1.0.3
+python-dotenv==1.0.1

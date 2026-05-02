@@ -1,0 +1,21 @@
+# Backend dependencies — used by Render (FastAPI + DB + LLM)
+# Render build command: pip install -r requirements-backend.txt
+
+# ── Core framework ────────────────────────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic[email]==2.10.3
+pydantic-settings==2.7.0
+
+# ── Database ──────────────────────────────────────────────────────────────────
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+
+# ── LLM ───────────────────────────────────────────────────────────────────────
+openai==1.58.1
+
+# ── Environment / frontend (included for local dev convenience) ───────────────
+python-dotenv==1.0.1
+streamlit==1.41.1
+requests==2.32.3
